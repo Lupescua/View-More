@@ -1,12 +1,87 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 head {}
 
 title {}
 
-body {}
+body {
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #d6d6d6;
+    text-align: center;
+    border:0 0 10vw 10vw;
+}
 
 header {}
 
-h1 {}
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo-link {
+    display: flex;
+    align-items: left;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin: 0 1rem;
+}
+
+.logo-link img {
+    width: 10vw;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: flex-end;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    display: block;
+    padding: 2vw;
+    background-color: #919b06;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #54bd8f;
+    color: #232323;
+}
+
+.main_title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
 
 section {}
 
@@ -23,9 +98,26 @@ article {}
 #hot_mov {}
 
 .hot_mov {}
+.hot_mov img{
+    width: 70%;
+    height: auto;
+    display: flex;
+  margin: auto;
+}
 
 #hot_act {}
 
 .hot_act {}
 
-footer {}
+.hot_act img{
+    width: 70%;
+    height: auto;
+    display: flex;
+  margin: auto;
+}
+
+footer {
+    padding: 3vw 6vw;
+}
+
+#contact {}
