@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+head {}
+
+title {}
+
+body {
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #d6d6d6;
+    text-align: center;
+    border: 0 0 10vw 10vw;
+    font-size: 4.5vw;
+}
+
+header {}
+
+h1 {}
+
+.poster {}
+
+.poster img {
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.year {}
+
+.rating {}
+
+.plot {}
+
+p {}
+
+.cast {}
+
+.cast {
+    padding-left: 0;
+    margin: 0;
+}
+
+ol {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+}
+
+.cast li {
+    width: 15vw;
+}
+
+.cast img {
+    width: auto;
+    height: 15vw;
+    display: flex;
+    margin: auto;
+}
+
+.reviews {}
+
+article {}
+
+.rew_title {}
+
+.rew_comm {}
