@@ -15,11 +15,9 @@ head {}
 title {}
 
 body {
-    margin: 0;
     font-family: 'Alegreya Sans', sans-serif;
     background-color: #d6d6d6;
     text-align: center;
-    border:0 0 10vw 10vw;
 }
 
 header {}
@@ -31,16 +29,19 @@ header {}
 }
 
 .logo-link {
-    display: flex;
-    align-items: left;
+    display: block;
+    float: left;
     margin-right: 1rem;
     margin-left: 1rem;
     margin: 0 1rem;
 }
 
 .logo-link img {
-    width: 10vw;
+    width: 5vw;
     height: auto;
+    position: fixed;;
+    border-radius: 50%;
+    align-self: left;
 }
 
 nav ul {
@@ -105,15 +106,31 @@ article {}
   margin: auto;
 }
 
-#hot_act {}
-
-.hot_act {}
-
-.hot_act img{
-    width: 70%;
-    height: auto;
+/* #hot_act {
     display: flex;
-  margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hot_act {
+    display: flex;
+    flex-direction: row;
+    font-size:1em;
+    justify-content: space-around;
+    align-items: center;
+}
+.hot_act a{
+    font-size: 1.2em;
+}
+.hot_act_text{
+    margin: 0;
+}
+.hot_act p{
+    width: 30%;
+}*/
+.hot_act img{
+    width: 10%;
+    height: auto;
 }
 
 footer {
